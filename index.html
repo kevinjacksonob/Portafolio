@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -14,61 +15,32 @@
         </div>
     </header>
     <main>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://avatars.githubusercontent.com/u/18755541?v=4" alt="Imagen 1" class="card-image">
-                    <h3>Yan Carlos Angarita Sanguino</h3>
-                    <p class="email">yancarlos1206@gmail.com</p>
+        <div class="card-container" id="studentsList"></div>
+        <!-- Student Card Template -->
+        <template id="studentCardTemplate">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="" class="card-img-top student-image" alt="Student Photo">
+                    <div class="card-body">
+                        <h5 class="card-title student-name"></h5>
+                        <p class="card-text student-id"></p>
+                        <p class="card-text student-email"></p>
+                        <button><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                        <button><i class="fa-solid fa-eye"></i> Details</button>
+                        <button><i class="fa-regular fa-user"></i> Resume</button>
+                        <div class="d-flex justify-content-start">
+                            <a href="#" class="btn btn-link github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>ID: 00001</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus, rerum dolorem, iusto aperiam consectetur ex reiciendis at perspiciatis maiores sint quam sequi, ab hic qui corrupti error nesciunt? Omnis.</p>
-                </div>
-               <div class="card-footer">
-                    <button class="card-button"> <i class="fa-solid fa-pen-to-square"></i> Edit</button>
-                    <button class="card-button">Details</button>
-                    <button class="card-button">Resume</button>
-                    <button class="card-button">Git</button>
-               </div>          
             </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://avatars.githubusercontent.com/u/31231104?v=4" alt="Imagen 1" class="card-image">
-                    <h3>Claudia Yamile Gomez LLanez</h3>
-                    <p class="email">claudiaygomez@ufps.edu.co</p>
-                </div>
-                <div class="card-body">
-                    <p>ID: 05096</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus, rerum dolorem, iusto aperiam consectetur ex reiciendis at perspiciatis maiores sint quam sequi, ab hic qui corrupti error nesciunt? Omnis.</p>
-                </div>
-               <div class="card-footer">
-                    <button class="card-button">Edits</button>
-                    <button class="card-button">Details</button>
-                    <button class="card-button">Resume</button>
-                    <button class="card-button">Git</button>
-               </div>          
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://avatars.githubusercontent.com/u/1791598?v=4" alt="Imagen 1" class="card-image">
-                    <h3>Carlos Rene Angarita Sanguino</h3>
-                    <p class="email">carlosrebeas@ufps.edu.co</p>
-                </div>
-                <div class="card-body">
-                    <p>ID: 05372</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus, rerum dolorem, iusto aperiam consectetur ex reiciendis at perspiciatis maiores sint quam sequi, ab hic qui corrupti error nesciunt? Omnis.</p>
-                </div>
-               <div class="card-footer">
-                    <button class="card-button">Edits</button>
-                    <button class="card-button">Details</button>
-                    <button class="card-button">Resume</button>
-                    <button class="card-button">Git</button>
-               </div>          
-            </div>
-        </div>
+        </template>
     </main>
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="scrips/api.js"></script>
+    <script src="scrips/app.js"></script>
 </body>
 </html>
