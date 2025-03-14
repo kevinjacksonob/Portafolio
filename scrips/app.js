@@ -19,13 +19,15 @@ document.addEventListener('DOMContentLoaded', async () => {
           clone.querySelector('.student-id').textContent = `ID: ${student.code}`;
           clone.querySelector('.student-email').textContent = student.email;
           clone.querySelector('.student-image').src = student.photo;
-          clone.querySelector('.github-link').href = `https://github.com/${student.github}`;
+          clone.querySelector('.student-description').textContent = student.description;
+          //clone.querySelector('.github-link').href = `https://github.com/${student.github}`;
       
           studentsList.appendChild(clone);
           
       });
   }
 
+  
   // Initial render
  await renderStudents();
 

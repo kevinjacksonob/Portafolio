@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portafolio UFPS</title>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -20,19 +20,35 @@
         <template id="studentCardTemplate">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="" class="card-img-top student-image" alt="Student Photo">
-                    <div class="card-body">
-                        <h5 class="card-title student-name"></h5>
-                        <p class="card-text student-id"></p>
-                        <p class="card-text student-email"></p>
-                        <button><i class="fa-solid fa-pen-to-square"></i> Edit</button>
-                        <button><i class="fa-solid fa-eye"></i> Details</button>
-                        <button><i class="fa-regular fa-user"></i> Resume</button>
-                        <div class="d-flex justify-content-start">
-                            <a href="#" class="btn btn-link github-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                    <div class="card-header">
+                        <div >
+                            <img src="" class="card-img-top student-image" alt="Student Photo">
                         </div>
+                        <div>
+                            <h5 class="card-title student-name"></h5>
+                            <p class="card-text student-email"></p>
+                        </div>
+                    </div>                               
+                    <div class="card-body">
+                        <p class="card-text student-id"></p>
+                        <p class="card-text student-description linea"></p>
+                        <div class="a-container">
+                            <a href="edit.html">
+                                <i class="fa-solid fa-pen-to-square"></i> Edit
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-eye"></i> Details
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-user"></i> Resume
+                            </a>
+                            <!-- <div class="d-flex justify-content-start">
+                                <a href="#" class="btn btn-link github-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>  -->
+                        </div>
+                        
                         
                     </div>
                 </div>

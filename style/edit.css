@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+  width: 70vh;
+  
+}
+
+.back {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 20px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-size: 15px;
+}
+
+.back:hover {
+  background-color: #ECF0F1;
+  transform: scale(1.1);
+}
+
+.contenedor-main {
+  border: 1px solid rgba(0, 0, 0, 0.242);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 500px;
+  padding-bottom: 0px;
+}
+.form-group > div {
+  margin-bottom: 20px;
+}
+
+.form-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.primero{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  gap: 20px;
+}
+
+.segundo{
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 20px;
+}
+
+.tercero{
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.cuarto{
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+form button {
+  align-self: flex-end;
+  justify-self: end;;
+}
